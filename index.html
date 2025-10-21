@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee event bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/optimize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__logo" href="#"
+            ><img src="img/logo-header.svg" alt="logo"
+          /></a>
+          <div class="header__contact">
+            <a class="header__phone" href="tel:+15551234567"
+              >+1 (555) 123-4567</a
+            >
+            <button class="header__menu-btn" type="button">
+              <img src="img/icon-menu.svg" alt="menu button" />
+            </button>
+          </div>
+          <!-- Header menu -->
+          <div class="menu-overlay" id="menuOverlay">
+            <nav class="header__menu">
+              <button class="menu__close" id="closeMenu">&times;</button>
+              <ul class="menu__list">
+                <li><a class="menu__list-link" href="#">Home</a></li>
+                <li><a class="menu__list-link" href="#about">About Us</a></li>
+                <li><a class="menu__list-link" href="#products">Products</a></li>
+                <li><a class="menu__list-link" href="#gallery">Gallery</a></li>
+                <li><a class="menu__list-link" href="#events">Events</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section
+      class="hero"
+      style="background-image: url('img/outdoor-cafe-evening.webp')"
+    >
+      <div class="container">
+        <!-- Video popup -->
+        <div class="hero__video">
+          <div class="hero__video-inner">
+            <img
+              class="hero__video-img"
+              src="img/video-tables-outdoor.webp"
+              alt="video"
+            />
+
+            <!-- Data-video -->
+            <div
+              class="hero__video-btnbox"
+              id="openVideo"
+              data-video="https://www.youtube.com/embed/tqy0PHh0s4U?autoplay=1"
+            >
+              <img
+                class="hero__video-btn"
+                src="img/video-btn.svg"
+                alt="Play button"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Popup overlay -->
+        <div class="video-popup" id="videoPopup">
+          <div class="video-popup__content">
+            <iframe
+              id="youtubeVideo"
+              src=""
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="hero__content">
+          <div class="hero__content-inner">
+            <div class="hero__content-item hero__item-title">
+              <h1 class="header-title hero__content-title">Aromatic Coffee</h1>
+              <div class="hero__title-spanbox">
+                <img
+                  class="hero__content-img"
+                  src="img/brown-leather-sofa-cafe.webp"
+                  alt="img"
+                />
+                <span class="header-title hero__content-title-span">in the Forest</span>
+              </div>
+            </div>
+            <div class="hero__content-item hero__item-text">
+              <p class="hero__content-text">
+                Welcome to our cozy coffee shop, hidden among lush green trees.
+                The aroma of freshly brewed coffee and the whisper of leaves
+                meet here.
+              </p>
+              <!-- Button -->
+              <a class="btn" href="#">Book now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <!-- Header -->
+        <div class="about__header">
+          <div class="about__header-items">
+            <h2 class="header-title about__header-title">Taste the Tranquility</h2>
+            <div class="about__subtitle">
+              <img
+                class="about__subtitle-img"
+                src="img/cup-tea.webp"
+                alt="img"
+              />
+              <span class="header-title about__header-title about__title-accent"
+                >of the Forest</span
+              >
+              <div class="header-logo about__header-logo">
+                <img
+                  class="about__header-logo-img"
+                  src="img/cafe-brand-symbol.svg"
+                  alt="logo"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="about__header-item-text">
+            <p class="about__header-text">
+              Lean back on soft cushions overlooking the forest canopy, allowing
+              yourself to immerse in
+              <strong class="about__header-strong">the relaxing</strong>
+              ambiance of nature. With every sip of our coffee, you'll feel the
+              warmth of trees, a gentle breeze, and a moment of tranquility.
+              <strong class="about__header-strong"
+                >Welcome to a corner of natural harmony and inspiration.</strong
+              >
+            </p>
+          </div>
+        </div>
+        <!-- Image Gallery -->
+        <div class="about__gallery">
+          <img
+            class="about__gallery-img reveal-right"
+            src="img/cafe-green-chairs-flowers.webp"
+            alt="img"
+          />
+          <img
+            class="about__gallery-img reveal-right"
+            src="img/cafe-interior-green.webp"
+            alt="img"
+          />
+          <img
+            class="about__gallery-img reveal-right"
+            src="img/tables-with-lanterns.webp"
+            alt="img"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Products -->
+    <section class="products" id="products">
+      <div class="container">
+        <!-- Header -->
+        <div class="products__header">
+          <div class="products__header-items">
+            <h2 class="header-title products__header-title">Product we</h2>
+            <div class="products__subtitle">
+              <img
+                class="products__subtitle-img"
+                src="img/cup-tea.webp"
+                alt="img"
+              />
+              <span class="header-title products__header-title products__title-accent">
+                have here
+              </span>
+            </div>
+          </div>
+
+          <div class="products__header-item-text">
+            <span class="products__header-subtitle">coffee bar</span>
+            <p class="products__header-text">
+              Embark on a captivating journey of flavors through our coffee
+              menu, where each sip unfolds a symphony of notes that echo the
+              serenity of the surrounding forest.
+            </p>
+
+            <!-- Menu categories -->
+            <div class="products__menu">
+               <div class="header-logo products__header-logo">
+                <img
+                  class="products__header-logo-img header-logo-img"
+                  src="img/cafe-brand-symbol.svg"
+                  alt="logo"
+                />
+              </div>
+              <div class="products__menu-wrapper">
+                <div class="products__menu-item active" data-filter="coffee">
+                <p class="products__menu-name">Coffee</p>
+                <span class="products__menu-quantity">6</span>
+              </div>
+              <div class="products__menu-item" data-filter="deserts">
+                <p class="products__menu-name">Deserts</p>
+                <span class="products__menu-quantity">6</span>
+              </div>
+              <div class="products__menu-item" data-filter="breakfast">
+                <p class="products__menu-name">Breakfast</p>
+                <span class="products__menu-quantity">6</span>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dishes list -->
+        <div class="products__list reveal-right">
+          <!-- Coffee 1 -->
+          <div class="products__dish" data-category="coffee">
+            <img src="img/coffee-cup-latte-art1.webp" alt="Espresso" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Espresso</h3>
+              <ul>
+                <li>Classic Espresso</li>
+                <li>Espresso Macchiato</li>
+                <li>Americano</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Coffee 2 -->
+          <div class="products__dish" data-category="coffee">
+            <img src="img/coffee-cup-latte-art2.webp" alt="Espresso" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Espresso</h3>
+              <ul>
+                <li>Classic Espresso</li>
+                <li>Espresso Macchiato</li>
+                <li>Americano</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Coffee 3 -->
+          <div class="products__dish" data-category="coffee">
+            <img src="img/coffee-cup-latte-art3.webp" alt="Espresso" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Espresso</h3>
+              <ul>
+                <li>Classic Espresso</li>
+                <li>Espresso Macchiato</li>
+                <li>Americano</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Coffee 4 -->
+          <div class="products__dish" data-category="coffee">
+            <img src="img/coffee-cup-latte-art4.webp" alt="Espresso" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Espresso</h3>
+              <ul>
+                <li>Classic Espresso</li>
+                <li>Espresso Macchiato</li>
+                <li>Americano</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Coffee 5 -->
+          <div class="products__dish" data-category="coffee">
+            <img src="img/coffee-cup-latte-art5.webp" alt="Espresso" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Espresso</h3>
+              <ul>
+                <li>Classic Espresso</li>
+                <li>Espresso Macchiato</li>
+                <li>Americano</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Coffee 6 -->
+          <div class="products__dish" data-category="coffee">
+            <img src="img/coffee-cup-latte-art6.webp" alt="Espresso" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Espresso</h3>
+              <ul>
+                <li>Classic Espresso</li>
+                <li>Espresso Macchiato</li>
+                <li>Americano</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Deserts 1 -->
+          <div class="products__dish" data-category="deserts">
+            <img src="img/slice-of-pie-on-plate1.webp" alt="Cheesecake" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Deserts</h3>
+              <ul>
+                <li>Chocolate Walnut Cakes </li>
+                <li>Carame l Drizzle</li>
+                <li>Chocolate Walnut</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Deserts 2 -->
+          <div class="products__dish" data-category="deserts">
+            <img src="img/slice-of-pie-on-plate2.webp" alt="Croissant" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Deserts</h3>
+              <ul>
+                <li>Chocolate Walnut Cakes </li>
+                <li>Carame l Drizzle</li>
+                <li>Chocolate Walnut</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Deserts 3 -->
+          <div class="products__dish" data-category="deserts">
+            <img src="img/slice-of-pie-on-plate3.webp" alt="Croissant" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Deserts</h3>
+              <ul>
+                <li>Chocolate Walnut Cakes </li>
+                <li>Carame l Drizzle</li>
+                <li>Chocolate Walnut</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Deserts 4 -->
+          <div class="products__dish" data-category="deserts">
+            <img src="img/slice-of-pie-on-plate4.webp" alt="Croissant" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Deserts</h3>
+              <ul>
+                <li>Chocolate Walnut Cakes </li>
+                <li>Carame l Drizzle</li>
+                <li>Chocolate Walnut</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Deserts 5 -->
+          <div class="products__dish" data-category="deserts">
+            <img src="img/slice-of-pie-on-plate5.webp" alt="Croissant" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Deserts</h3>
+              <ul>
+               <li>Chocolate Walnut Cakes </li>
+                <li>Carame l Drizzle</li>
+                <li>Chocolate Walnut</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Deserts 6 -->
+          <div class="products__dish" data-category="deserts">
+            <img src="img/slice-of-pie-on-plate6.webp" alt="Croissant" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Deserts</h3>
+              <ul>
+                <li>Chocolate Walnut Cakes </li>
+                <li>Carame l Drizzle</li>
+                <li>Chocolate Walnut</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Breakfast 1 -->
+          <div class="products__dish" data-category="breakfast">
+            <img src="img/pie-on-plate-juice-pitcher1.webp" alt="Pancakes" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Breakfast</h3>
+              <ul>
+                <li>Forest Mist</li>
+                <li>Woodland Mocha</li>
+                <li>Mint Chocolate</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Breakfast 2 -->
+          <div class="products__dish" data-category="breakfast">
+            <img src="img/pie-on-plate-juice-pitcher2.webp" alt="Omelette" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Breakfast</h3>
+              <ul>
+                 <li>Forest Mist</li>
+                <li>Woodland Mocha</li>
+                <li>Mint Chocolate</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Breakfast 3 -->
+          <div class="products__dish" data-category="breakfast">
+            <img src="img/pie-on-plate-juice-pitcher3.webp" alt="Omelette" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Breakfast</h3>
+              <ul>
+               <li>Forest Mist</li>
+                <li>Woodland Mocha</li>
+                <li>Mint Chocolate</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Breakfast 4 -->
+          <div class="products__dish" data-category="breakfast">
+            <img src="img/pie-on-plate-juice-pitcher4.webp" alt="Omelette" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Breakfast</h3>
+              <ul>
+                <li>Forest Mist</li>
+                <li>Woodland Mocha</li>
+                <li>Mint Chocolate</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Breakfast 5 -->
+          <div class="products__dish" data-category="breakfast">
+            <img src="img/pie-on-plate-juice-pitcher5.webp" alt="Omelette" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Breakfast</h3>
+              <ul>
+                <li>Forest Mist</li>
+                <li>Woodland Mocha</li>
+                <li>Mint Chocolate</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Breakfast 6 -->
+          <div class="products__dish" data-category="breakfast">
+            <img src="img/pie-on-plate-juice-pitcher6.webp" alt="Omelette" />
+            <div class="products__dish-info">
+              <h3 class="products__title">Breakfast</h3>
+              <ul>
+                 <li>Forest Mist</li>
+                <li>Woodland Mocha</li>
+                <li>Mint Chocolate</li>
+              </ul>
+            </div>
+          </div>
+
+        <!-- Show more button -->
+        <div class="products__showmore">
+          <button class="btn" id="showMoreBtn">Show more</button>
+        </div>
+      </div>
+    </section>
+    <!-- Products End -->
+
+    <!-- Layered -->
+    <section class="layered">
+      <div class="layered__bg layered__bg--back" 
+       style="background-image: url('img/restaurant-window-forest-view2.webp');">
+      </div>
+      <div class="layered__content reveal-up">
+        <h2 class="header-title layered__content-title">A cozy café</h2>
+      </div>
+      <div class="layered__cta">
+        <h3 class="header-title layered__cta-subtitle">inspired by the forest</h3>
+        <a class="btn layered__cta-btn" href="#">See our menu</a>
+      </div>
+      
+      <div class="layered__bg layered__bg--front" 
+       style="background-image: url('img/restaurant-window-forest-view1.webp');"></div>
+      </section>
+         <!-- Layered End -->
+
+      <!-- Slider gallery -->
+      <section class="curved-slider" id="gallery">
+        <div class="container">
+          <div class="curved-slider__header">
+            <div class="curved-slider__header-top">
+              <h2 class="header-title curved-slider__title title-accent">gallery</h2>
+              <span class="header-title curved-slider__subtitle">Sip, relax, and enjoy the forest vibe</span>
+            </div>
+            <div class="curved-slider__header-bottom">
+               <div class="header-logo curved-slider__header-logo">
+                <img
+                  class="header-logo-img"
+                  src="img/cafe-brand-symbol.svg"
+                  alt="logo"
+                />
+              </div>
+              <h2 class="curved-slider__title">of our cafe</h2>
+            </div>
+        </div>
+        </div>
+           
+        <!-- Slides -->
+        <div class="curved-slider__wrapper">
+          <div class="curved-slider__slide">
+            <img src="img/table-trees-chandeliers.webp" alt="Slide 1">
+          </div>
+          <div class="curved-slider__slide">
+            <img src="img/grey-table-in-garden.webp" alt="Slide 2">
+          </div>
+          <div class="curved-slider__slide">
+            <img src="img/table-mountains-view.webp" alt="Slide 3">
+          </div>
+          <div class="curved-slider__slide">
+            <img src="img/green-sofas-tables-lamps.webp" alt="Slide 4">
+          </div>
+          <div class="curved-slider__slide">
+            <img src="img/tables-forest-view.webp" alt="Slide 5">
+          </div>
+          <div class="curved-slider__slide">
+            <img src="img/tables-trees-lights.webp" alt="Slide 6">
+          </div>
+        </div>
+
+        <!-- Pagination -->
+         <div class="curved-slider__pagination"></div>
+        </section>
+        <!-- Slider gallery End -->
+
+
+        <!-- Events -->
+        <section class="events" id="events">
+          <div class="container">
+
+           <!-- Header -->
+        <div class="events__header">
+          <div class="events__header-items">
+            <h2 class="header-title events__header-title">The upcoming </h2>
+            <div class="events__subtitle">
+              <img
+                class="events__subtitle-img"
+                src="img/cup-tea.webp"
+                alt="img"
+              />
+              <span class="header-title events__header-title events__title-accent"
+                >atmospheric events</span
+              >
+            </div>
+          </div>
+          <div class="events__header-item-text">
+            <p class="events__header-text">
+              We cordially invite you to join us for these enchanting events, where every gathering promises to be a memorable celebration of nature, <strong class="events__header-strong"
+                >coffee, and community.</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- Events items -->
+        <div class="events__inner">
+
+          <!-- Item 1 -->
+         <ul class="events__list">
+           <!-- Date & Time -->
+           <li class="events__list-item events__list-date-time">
+            <span class="events__list-date">02.09</span>
+            <span class="events__list-time">11:00</span>
+            </li>
+
+            <!-- Image -->
+            <li class="events__list-item">
+             <img class="events__list-img events__list-img-1" src="img/three-coffee-cups.webp" alt="img">
+            </li>
+
+            <!-- Title -->
+            <li class="events__list-item">
+             <h3 class="events__list-title">Coffee Experiment Day</h3>
+            </li>
+
+            <!-- Empty space-->
+            <li class="events__list-item empty-space">
+             <img class="events__list-img" src="" alt="" style="visibility:hidden;">
+            </li>
+
+             <!-- Text -->
+            <li class="events__list-item">
+             <p class="events__list-text">Organize a day focused on coffee experiments. Guests can create their own unique drinks by adding different ingredients and syrups, and share their discoveries.</p>
+            </li>
+
+             <!-- Image -->
+            <li class="events__list-item empty-space">
+             <img class="events__list-img events__list-img-2" src="img/coffee-pouring-pitcher.webp" alt="img">
+            </li>
+            <!-- Button -->
+            <li class="events__list-item"> 
+              <a class="btn events__list-btn" href="#">Buy tickets</a>
+            </li>
+         </ul>
+
+        <!-- Item 2 -->
+         <ul class="events__list">
+          
+          <!-- Date & Time -->
+          <li class="events__list-item events__list-date-time">
+            <span class="events__list-date">12.09</span>
+            <span class="events__list-time">11:00</span>
+          </li>
+          
+          <!-- Empty space-->
+          <li class="events__list-item empty-space">
+            <img class="events__list-img" src="" alt="" style="visibility:hidden;">
+          </li>
+          
+          <!-- Title -->
+          <li class="events__list-item">
+            <h3 class="events__list-title">Woodland Picnic</h3>
+          </li>
+
+          <!-- Empty space-->
+          <li class="events__list-item empty-space">
+            <img class="events__list-img" src="" alt="" style="visibility:hidden;">
+          </li>
+          
+          <!-- Text -->
+           <li class="events__list-item">
+            <p class="events__list-text">
+              Arrange an outdoor picnic among the trees. Guests can enjoy your coffee and desserts on a blanket amidst nature's surroundings.
+            </p>
+          </li>
+          
+          <!-- Empty space -->
+           <li class="events__list-item empty-space">
+            <img class="events__list-img" src="" alt="" style="visibility:hidden;">
+          </li>
+          
+          <!-- Button -->
+           <li class="events__list-item">
+            <a class="btn events__list-btn" href="#">Buy tickets</a>
+          </li>
+        </ul>
+
+
+          <!-- Item 3 -->
+         <ul class="events__list">
+
+            <!-- Date & Time -->
+           <li class="events__list-item events__list-date-time">
+            <span class="events__list-date">13.09</span>
+            <span class="events__list-time">11:00</span>
+            </li>
+
+            <!-- Empty space-->
+          <li class="events__list-item empty-space">
+            <img class="events__list-img" src="" alt="" style="visibility:hidden;">
+          </li>
+
+            <!-- Title -->
+            <li class="events__list-item">
+             <h3 class="events__list-title">Coffee Evening<br>with Liv Music</h3>
+            </li>
+
+            <!-- Image -->
+            <li class="events__list-item">
+             <img class="events__list-img events__list-img-3" src="img/coffee-grinding.webp" alt="img">
+            </li>
+
+            <!-- Text -->
+            <li class="events__list-item">
+             <p class="events__list-text">Host an evening with live music in your coffee shop. Soft melodies will blend with the forest ambiance, creating a unique atmosphere.</p>
+            </li>
+
+            <!-- Empty space-->
+          <li class="events__list-item empty-space">
+            <img class="events__list-img" src="" alt="" style="visibility:hidden;">
+          </li>
+
+            <!-- Button -->
+            <li class="events__list-item"> 
+              <a class="btn events__list-btn" href="#">Buy tickets</a>
+            </li>
+         </ul>
+
+          <!-- Item 4 -->
+         <ul class="events__list">
+           <!-- Date & Time -->
+           <li class="events__list-item events__list-date-time">
+            <span class="events__list-date">19.09</span>
+            <span class="events__list-time">11:00</span>
+            </li>
+
+            <!-- Empty space-->
+          <li class="events__list-item">
+            <img class="events__list-img" src="" alt="" style="visibility:hidden;">
+          </li>
+             
+          <!-- Title -->
+            <li class="events__list-item">
+             <h3 class="events__list-title">Coffee Tasting<br>with Origin Stories
+             </h3>
+            </li>
+
+            <!-- Empty space-->
+          <li class="events__list-item empty-space">
+            <img class="events__list-img" src="" alt="" style="visibility:hidden;">
+          </li>
+
+            <!-- Text -->
+            <li class="events__list-item">
+             <p class="events__list-text">Invite a coffee expert to share the origin stories of different coffee varieties. Guests can sample various options and learn about their history.</p>
+            </li>
+
+            <!-- Image -->
+            <li class="events__list-item events__list-item-del">
+             <img class="events__list-img events__list-img-4" src="img/band-rehearsal.webp" alt="img">
+            </li>
+
+            <!-- Button -->
+            <li class="events__list-item"> 
+              <a class="btn events__list-btn" href="#">Buy tickets</a>
+            </li>
+         </ul>
+         </div>
+        </div>
+          </div>
+        </section>
+         <!-- Events End -->
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+          <div class="container">
+            <div class="testimonials__header">
+              <div class="testimonials__header-item">
+                <h2 class="header-title testimonials__header-title">Happy</h2>
+            <div class="testimonials__subtitle">
+              <img
+                class="testimonials__subtitle-img"
+                src="img/cup-tea2.webp"
+                alt="img"
+              />
+              <span class="header-title testimonials__header-title testimonials__title-accent"
+                >Voices</span
+              >
+            </div>
+              </div>
+              <div class="testimonials__header-item">
+                <p>Here, every cup is a reason to relax, connect, and maybe start something new.</p>
+
+                <!-- Avatars -->
+                 <!-- Avatar-group one -->
+                  <div class="avatar-groups">
+                  <div class="avatar-group">
+                    <img class="testimonials__header-avatar" src="img/avatar-1.webp" alt="avatar">
+                    <img class="testimonials__header-avatar" src="img/avatar-2.webp" alt="avatar"> 
+                  </div>
+
+                 <!-- Avatar-group two -->
+                <div class="avatar-group">
+                <img class="testimonials__header-avatar" src="img/avatar-3.webp" alt="avatar">
+                <img class="testimonials__header-avatar" src="img/avatar-4.webp" alt="avatar">
+                <img class="testimonials__header-avatar" src="img/avatar-5.webp" alt="avatar">
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonials slider -->
+              <div class="testimonials__slider">
+                <div class="testimonials__slider-wrapper">
+
+                  <!-- Slide 1 -->
+                  <div class="testimonials__slider-items">
+                    <img class="testimonials__slider-img" src="img/two-friends-drinking-cappuccino.webp" alt="two friends drinking cappuccino.webp">
+                    
+                    <!-- Item 1 -->
+                    <div class="testimonials__slider-item-wrapper">
+                    <div class="testimonials__slider-item slider-item-top">
+                    <p class="testimonials__slider-text">
+                      “This café is our favorite hangout spot! Always cozy vibes and the best laughs with friends.”
+                    </p>
+                    <span class="testimonials__slider-info">— Emily, 21</span>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="testimonials__slider-item slider-item-bottom">
+                    <p class="testimonials__slider-text">
+                     “We come here after classes all the time. Chill music, tasty drinks, and just good energy.”
+                    </p>
+                    <span class="testimonials__slider-info">— Sophia, 21</span>
+                    </div>
+                  </div>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="testimonials__slider-items">
+                    <img class="testimonials__slider-img" src="img/friends-sitting-restaurant-using-mobile-phone.webp" alt="friends sitting restaurant using mobile phone">
+                    
+                    <!-- Item 1 -->
+                    <div class="testimonials__slider-item-wrapper">
+                    <div class="testimonials__slider-item slider-item-top">
+                    <p class="testimonials__slider-text">
+                      “Love the atmosphere here – feels like home, but with way better coffee!”
+                    </p>
+                    <span class="testimonials__slider-info">— Jake, 21</span>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="testimonials__slider-item slider-item-bottom">
+                    <p class="testimonials__slider-text">
+                      “Every visit feels like a mini-vacation. Coffee, friends, and good vibes only!”
+                    </p>
+                    <span class="testimonials__slider-info">— Nikolas, 21</span>
+                    </div>
+                  </div>
+                  </div>
+
+                  <!-- Slide 3 -->
+                  <div class="testimonials__slider-items">
+                    <img class="testimonials__slider-img" src="img/girls-taking-selfie-cafe.webp" alt="girls-taking-selfie-cafe">
+                    
+                    <!-- Item 1 -->
+                    <div class="testimonials__slider-item-wrapper">
+                    <div class="testimonials__slider-item slider-item-top">
+                    <p class="testimonials__slider-text">
+                      “Perfect place to relax, chat for hours, and forget about stress.”
+                    </p>
+                    <span class="testimonials__slider-info">— Liam, 21</span>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="testimonials__slider-item slider-item-bottom">
+                    <p class="testimonials__slider-text">
+                      “Met so many cool people here – it’s more than a café, it’s a community.”
+                    </p>
+                    <span class="testimonials__slider-info">— Ava, 21</span>
+                    </div>
+                    </div>
+                  </div>
+
+                  <!-- Slide 4 -->
+                  <div class="testimonials__slider-items">
+                    <img class="testimonials__slider-img" src="img/two-friends-drinking-cappuccino.webp" alt="two friends drinking cappuccino.webp">
+                    
+                    <!-- Item 1 -->
+                    <div class="testimonials__slider-item-wrapper">
+                    <div class="testimonials__slider-item slider-item-top">
+                    <p class="testimonials__slider-text">
+                      “This café is our favorite hangout spot! Always cozy vibes and the best laughs with friends.”
+                    </p>
+                    <span class="testimonials__slider-info">— Emily, 21</span>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="testimonials__slider-item slider-item-bottom">
+                    <p class="testimonials__slider-text">
+                     “We come here after classes all the time. Chill music, tasty drinks, and just good energy.”
+                    </p>
+                    <span class="testimonials__slider-info">— Sophia, 21</span>
+                    </div>
+                    </div>
+                  </div>
+
+                  <!-- Slide 5 -->
+                  <div class="testimonials__slider-items">
+                    <img class="testimonials__slider-img" src="img/friends-sitting-restaurant-using-mobile-phone.webp" alt="friends sitting restaurant using mobile phone">
+                    
+                    <!-- Item 1 -->
+                    <div class="testimonials__slider-item-wrapper">
+                    <div class="testimonials__slider-item slider-item-top">
+                    <p class="testimonials__slider-text">
+                      “Love the atmosphere here – feels like home, but with way better coffee!”
+                    </p>
+                    <span class="testimonials__slider-info">— Jake, 21</span>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="testimonials__slider-item slider-item-bottom">
+                    <p class="testimonials__slider-text">
+                      “Every visit feels like a mini-vacation. Coffee, friends, and good vibes only!”
+                    </p>
+                    <span class="testimonials__slider-info">— Nikolas, 21</span>
+                    </div>
+                    </div>
+                  </div>
+
+                  <!-- Slide 6 -->
+                  <div class="testimonials__slider-items">
+                    <img class="testimonials__slider-img" src="img/girls-taking-selfie-cafe.webp" alt="girls-taking-selfie-cafe">
+                    
+                    <!-- Item 1 -->
+                    <div class="testimonials__slider-item-wrapper">
+                    <div class="testimonials__slider-item slider-item-top">
+                    <p class="testimonials__slider-text">
+                      “Perfect place to relax, chat for hours, and forget about stress.”
+                    </p>
+                    <span class="testimonials__slider-info">— Liam, 21</span>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="testimonials__slider-item slider-item-bottom">
+                    <p class="testimonials__slider-text">
+                      “Met so many cool people here – it’s more than a café, it’s a community.”
+                    </p>
+                    <span class="testimonials__slider-info">— Ava, 21</span>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials__pagination"></div>
+          </div>
+        </section>
+          <!-- Testimonials End -->
+
+        <!-- Our partners -->
+        <section class="partners">
+          <div class="container">
+            <div class="partners__inner">
+              <!-- Logos partner -->
+               <img class="partners__logo" src="img/logo-nescafe.webp" alt="Nescafe">
+               <img class="partners__logo" src="img/logo-jacobs.webp" alt="Jacobs">
+               <img class="partners__logo" src="img/logo-lavazza.webp" alt="Lavazza">
+               <img class="partners__logo" src="img/logo-tchibo.webp" alt="Tchibo">
+               <img class="partners__logo" src="img/logo-douwe-egberts.webp" alt="Douwe Egberts">
+               <img class="partners__logo" src="img/logo-starbucks.webp" alt="Starbucks">
+               
+               <!-- Duplicate the same logos for seamless movement -->
+              <img class="partners__logo" src="img/logo-nescafe.webp" alt="Nescafe">
+              <img class="partners__logo" src="img/logo-jacobs.webp" alt="Jacobs">
+              <img class="partners__logo" src="img/logo-lavazza.webp" alt="Lavazza">
+              <img class="partners__logo" src="img/logo-tchibo.webp" alt="Tchibo">
+              <img class="partners__logo" src="img/logo-douwe-egberts.webp" alt="Douwe Egberts">
+              <img class="partners__logo" src="img/logo-starbucks.webp" alt="Starbucks">
+            </div>
+          </div>
+        </section>
+        <!-- Our partners End -->
+
+        <!-- Footer -->
+        <footer class="footer">
+         <div class="container">
+          <div class="footer__top">
+            <div class="footer__top-inner">
+              <div class="footer__top-item">
+                <h2 class="header-title footer__top-title">Contact Us:</h2>
+                <img class="footer__top-img" src="img/cafe-tables-evening-trees.webp" alt="img">
+              </div>
+              <div class="footer__top-item">
+               <ul class="footer__top-list">
+                <li class="footer__top-list-item">
+                  <strong>Address:</strong>
+                  <p>Seattle, Washington, 123 Forest<br> Avenue, Woodland Retreat, CA 56789</p>
+                </li>
+                <li class="footer__top-list-item">
+                  <strong>Phone:</strong>
+                  <p>+1 (555) 123-4567</p>
+                </li>
+                <li class="footer__top-list-item">
+                  <strong>Email:</strong>
+                  <p>info@example.com</p>
+                </li>
+              </ul>
+
+              </div>
+              <div class="footer__top-item">
+                 <ul class="footer__top-list footer__social-list">
+                <li class="footer__top-list-item footer__social-list-item">
+                  <strong>Follow Us</strong>
+                </li>
+                <li class="footer__top-list-item footer__social-list-item">
+                 <a class="footer__social-list-link" href="#">Instagram</a>
+                </li>
+                <li class="footer__top-list-item footer__social-list-item">
+                  <a class="footer__social-list-link" href="#">Facebook</a>
+                </li>
+              </ul>
+              <div class="footer__top-gallery">
+                <img src="img/img1.webp" alt="coffee in jar">
+                <img src="img/img2.webp" alt="coffee in jar">
+                <img src="img/img3.webp" alt="coffee in jar">
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__button">
+            <div class="footer__button-inner">
+            <nav class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Terms of Use</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Privacy Policy</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Cookie Policy</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="footer__logo-link" href="#">
+              <img class="footer__logo-img" src="img/logo-footer.svg" alt="logo">
+            </a>
+            <nav class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Book table</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Menu</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Events</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#">Gallery</a>
+                </li>
+              </ul>
+            </nav>
+            </div>
+          </div>
+         </div>
+        </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
