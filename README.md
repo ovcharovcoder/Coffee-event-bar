@@ -1,5 +1,3 @@
-# Coffee-event-bar
-
 <h1>Website "Coffee event bar"</h1>
 <h2>About</h2>
 <ul>
