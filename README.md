@@ -5,7 +5,7 @@
   <li>Web developer: Andriy Ovcharov;</li>
   <li>Development date: 22.10.2025;</li>
   <li>
-    <p>Brief description:</p>
+    <h3>Brief description:</h3>
     <p>The website represents a cozy coffee shop, for which I first designed a visual concept in Figma and then developed a responsive layout using HTML, CSS, and JavaScript.</p>
   </li>
   <li>View website: https://ovcharovcoder.github.io/Coffee-event-bar/</li>
